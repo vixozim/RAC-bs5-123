@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Check In | Rentacar.com.ar</title>
+
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/bootstrap-5.1.3/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" >
+
+        <link rel="stylesheet" href="assets/bootstrap-icons-1.8.3/bootstrap-icons-1.8.3/fonts/bootstrap-icons.woff">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/country/css/bootstrap-select-country.min.css" />
+        <link rel="stylesheet" href="assets/credit-card/css/card.css">
+
+        <style>
+
+.hide {
+    display: none;
+}
+
+        </style>
+      
+    </head>
+    <body class="wide">      
+        
+        <div class="wrapper">
+
+
+
+        <!-- HEADER -->
+      <header class="header sticky-top">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-rentacar.png" alt="Logo Rentacar"/></a>
+                </div>
+
+                <div class="logo2">
+                    <a href="index.html"><img src="https://www.rentacar.com.ar/assets2/img/Logo_Tienda-01_WEBP.webp" alt="Logo Rentacar"/></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Mobile menu toggle button -->
+                <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify hidden-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                  </svg></a>
+                <!-- /Mobile menu toggle button -->
+
+                <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- navigation menu -->
+                            <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                            <ul class="nav sf-menu">
+                               
+                             <!--    <li><a href="#">Mis Reservas</a></li>
+                                <li><a href="#">Favoritos</a></li>
+                                
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="#">Contacto</a></li>
+                               
+                                <li ><a href="index.html" >$ (ARS)</a>
+                                    <ul>
+                                        <li><a href="#" >US$ (DOL)</a></li>
+										  <li><a href="#">€ (EUR)</a></li>
+                                        <li><a href="#">R$ (BRL)</a></li>
+										 <li><a href="#">$ (UYU)</a></li>
+                                     
+                                        
+                                    </ul>
+                                </li> -->
+								 <li class="active"><a href="index.html" ><img src="assets/img/esp.png" alt="Español"/></a>
+                                    <ul>
+                                        <li><a href="#" ><img src="assets/img/ing.png" alt="Ingles"/></a></li>
+                                        <li><a href="#"><img src="assets/img/bra.png" alt="Portugues"/></a></li>
+                                        <li><a href="#"><img src="assets/img/fra.png" alt="Frances"/></a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /navigation menu -->
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+                <!-- /Navigation -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+            <form action="" id="f_datos">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <h5 class="card-title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                            </svg>
+                                            Datos personales
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_nombre" placeholder="Nombre">
+                                            <label for="i_nombre">Nombre</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_apellido" placeholder="Apellido">
+                                            <label for="i_apellido">Apellido</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control" id="i_nacimientoFecha">
+                                                <label for="i_nacimientoFecha">Fecha de nacimiento</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                           <!--  <select class="form-select" id="i_pais" aria-label="Floating label select example">
+                                                <option selected>Seleccionar País</option>
+                                                <option value="1">Argentina</option>
+                                                <option value="2">Brasil</option>
+                                                <option value="3">Uruguay</option>
+                                            </select> -->
+                                            <select id="i_pais" class="form-select selectpicker countrypicker" data-flag="true"  aria-label="Floating label select example"></select>
+                                            
+                                            <label for="i_pais"> País</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_ciudad" placeholder="Ciudad">
+                                            <label for="i_ciudad">Ciudad</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_estado" placeholder="Estado">
+                                            <label for="i_estado">Estado</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="i_documentoTipo" aria-label="Floating label select example">
+                                                <option selected>Tipo</option>
+                                                <option value="1">DNI</option>
+                                                <option value="2">DU</option>
+                                                <option value="3">Pasaporte</option>
+                                            </select>
+                                            <label for="i_documentoTipo"> Tipo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-4" >
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_documentoNumero" placeholder="Número de documento">
+                                            <label for="i_documentoNumero">Número de documento</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_codIntTelefono2" style="height: 57px;">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_codAreaTelefono" placeholder="Cod. área">
+                                            <label for="i_codAreaTelefono">Cod. área</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_telefono" placeholder="Teléfono">
+                                            <label for="i_telefono">Teléfono</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="i_email" placeholder="Email">
+                                            <label for="i_email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <!-- <div class="form-floating">
+                                            <select class="form-select" id="i_viajeTipo" aria-label="Floating label select example">
+                                                <option selected>Tipo</option>
+                                                <option value="1">Negocio</option>
+                                                <option value="2">Vacaciones</option>
+                                            </select>
+                                           
+                                        </div> -->
+                                        <div class="row">
+                                        <label for="i_viajeTipo">Tipo de viaje</label>
+                                       
+                                        <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Negocio
+                                            </label>
+                                          </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Vacaciones
+                                            </label>
+                                          </div>
+                                          </div>
+
+                                          </div>
+                                    </div>   
+                                    <div class="col-6 col-md-2">
+                                        <div class="form-floating">
+                                         
+                                            <input class="form-control" type="number" id="i_adultosCantidad"  placeholder="0">
+
+                                            <label for="i_adultosCantidad">Cant. adultos</label>
+                                        </div>
+                                    </div>      
+                                    <div class="col-6 col-md-2">
+                                        <div class="form-floating">
+                                          
+                                            <input class="form-control" type="number" id="i_menores_cantidad"  placeholder="0">
+
+                                            <label for="i_menores_cantidad">Cant. menores</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <div class="mb-3">
+                                            <span class="ml-5">
+                                                <label for="i_documentoFoto" class="form-label"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                            </svg>
+                                                <span class="hidden-lg">Enviar foto de frente del documento.</span>
+                                                <span class="hidden-xs">Adjuntar frente del documento.</span>
+                                            </label>
+                                            <input class="form-control mt-1" type="file" id="i_documentoFoto" multiple>
+                                        </div>
+                                    </div>  
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <div class="mb-3">
+                                            <span class="ml-5"><label for="i_documentoFoto" class="form-label"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                            </svg>
+                                            <span class="hidden-lg">Enviar foto de dorso del documento.</span>
+                                            <span class="hidden-xs">Adjuntar dorso del documento.</span>
+                                            </label>
+                                            <input class="form-control mt-1" type="file" id="i_documentoFoto" multiple>
+                                        </div>
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <h5 class="card-title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                                                <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                                            </svg>
+                                            Datos licencia de conducir
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_licenciaNumero" placeholder="Nº de licencia">
+                                            <label for="i_licenciaNumero">Nº de licencia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control" id="i_licenciaVencimiento">
+                                                <label for="i_licenciaVencimiento">Vencimiento</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-2">
+                                        <div class="mb-3">
+                                            <span class="ml-5"><label for="i_licenciaFotoFrente" class="form-label"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                            </svg>
+                                            <span class="hidden-lg">Enviar frente de dorso de la licencia.</span>
+                                            <span class="hidden-xs">Adjuntar frente de la licencia.</span>
+                                            </label>
+                                            <input class="form-control mt-1" type="file" id="i_licenciaFoto" multiple>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-12 mt-2">
+                                        <div class="mb-3">
+                                            <span class="ml-5"><label for="i_licenciaFotoDorso" class="form-label"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                            </svg>
+                                            <span class="hidden-lg">Enviar foto de dorso de la licencia.</span>
+                                            <span class="hidden-xs">Adjuntar dorso de la licencia.</span>
+                                            </label>
+                                            <input class="form-control " type="file" id="i_licenciaFoto" multiple>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <h5 class="card-title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                                            </svg>
+                                            Datos Tarjeta <br><span style="font-size: 0.6em;">Ayudanos a completar esta información, que permitirá que al momento de entregar el auto, podamos hacerlo mucho mas rápido y mejor</span>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <div class="input-wrapped full" id="validateCard">
+                                                <input type="text" size="20" name="ccNumber" maxlength="16" id="cardnumber" class="full form-control" placeholder="1234 5678 9012 3456" data-creditcard="true" style="height: 54px;">
+                                                <i class="icon-ok"></i>
+                                                <!-- <i class="icon-ok"></i> -->
+                                                <!-- <span class="icon-ok"></span> -->
+                                            </div>
+                                           <!--  <input type="text" class="form-control" id="i_tarjetaNumero" placeholder="Nº de tarjeta" value="AMEX-XXXX-XXXX-1024">
+                                            <label for="i_tarjetaNumero">Nº de tarjeta</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="i_tarjetaNombreTitular" placeholder="Nombre del titular">
+                                            <label for="i_tarjetaNombreTitular">Nombre del titular</label>
+                                        </div>
+                                    </div>           
+                                    <div class="col-4 col-md-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="i_TarjetaVencimientoMes" aria-label="Floating label select example">
+                                                <option selected>Venc.</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <label for="i_TarjetaVencimientoMes">Mes</label>
+                                        </div>     
+                                    </div>    
+                                    <div class="col-4 col-md-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="i_tarjetaVencimientoAnio" aria-label="Floating label select example">
+                                                <option selected>Venc.</option>
+                                                <option value="1">2022</option>
+                                                <option value="2">2023</option>
+                                                <option value="3">2024</option>
+                                                <option value="4">2025</option>
+                                                <option value="5">2026</option>
+                                                <option value="6">2027</option>
+                                                <option value="7">2028</option>
+                                                <option value="8">2029</option>
+                                                <option value="9">2030</option>
+                                                <option value="10">2031</option>
+                                                <option value="11">2032</option>
+                                                <option value="12">2034</option>
+                                            </select>
+                                            <label for="i_tarjetaVencimientoAnio">Año</label>
+                                        </div>     
+                                    </div>   
+                                    <div class="col-4 col-md-2">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="i_tarjetaCvc" placeholder="CVC">
+                                            <label for="i_tarjetaCvc">CVC</label>
+                                        </div> 
+                                    </div>  
+                                    <div class="col-4 col-md-4">
+                                       <img src="assets/img/cod-visa-master.jpg" class="img-fluid">
+                                    </div>                       
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 px-4 mx-5 col-md-4 text-center">
+                        <div class="row">
+                            <button class="btn btn-theme btn-theme-dark" id="b_enviarDatosModal" href="#">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal" id="m_login" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ingresar datos - Web cheking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="m_nombre" placeholder="Nombre">
+                        <label for="m_nombre">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="m_apellido" placeholder="Apellido">
+                        <label for="m_apellido">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="m_codigo" placeholder="Código">
+                        <label for="m_codigo">Código</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                   <!--  <a type="button" class="btn btn-theme " id="b_enviarDatosModal">Enviar</a> -->
+                    <a class="btn btn-theme pull-right btn-cancel btn-theme-dark" id="b_enviarDatosModal" href="#">Enviar</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-6">
+                        <div class="widget">
+                            <h4 class="widget-title">EMPRESA</h4>
+							
+                             
+							  <a href="#" ><img class="img-responsive" src="assets/img/data-fiscal.png" alt="Data Fical" style="margin-bottom: 10px;"/></a>
+                         
+                          <img class="img-responsive" src="assets/img/logo_marca_pais.png" alt="Argentina" style="margin-bottom: 10px;"/>
+						  
+						   <a href="index.html"><img class="img-fluid" src="assets/img/logo-rentacar-footer.png" alt="Logo Rentacar"/></a>
+                           
+                        </p>
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-6">
+                        <div class="widget ">
+                            <h4 class="widget-title">Información</h4>
+                            <ul>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Sucursales</a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Contacto</a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Términos y Condiciones</a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Mapa de Sitio</a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Franquicia</a></li>
+								  <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> Info. Covid 19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3  col-6">
+                        <div class="widget widget-tag-cloud">
+                            <h4 class="widget-title">Formas de Pago</h4>
+                            <ul>
+							 <li><img class="img-responsive" src="assets/img/ssl-2-1.png" alt="Sitio Seguro"/></li>
+                               
+							
+                               
+                            </ul>
+                        </div>
+						<div class="widget widget-tag-cloud">
+                          
+                            <ul>
+							 
+                                <li><img class="img-responsive" src="assets/img/mercado-pago-logo.png" alt="Mercado Pago"/></li>
+                                <li> <img src="assets/img/preview/payments/mastercard-2.jpg" alt="Mastercard"/></li>
+                                <li><img src="assets/img/preview/payments/visa-2.jpg" alt="Visa"/></li>
+                                <li> <img src="assets/img/preview/payments/american-express-2.jpg" alt="American Express"/></li>
+                                <li><img src="assets/img/preview/payments/paypal-2.jpg" alt="Paypal"/></li>
+							
+                               
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-3  col-6">
+                        <div class="widget">
+                            <h4 class="widget-title">CONTACTO</h4>
+                          
+                           
+                            <ul>
+							  <li>
+                                   <a href="tel:08107778080" style="padding-top: 5px; "><i class="fa fa-phone"></i> 0810 777 8080</a></li>
+								   <li><i class="fa fa-calendar"></i> Lun a Vie de 9hs a 19hs </li>
+								     <li><i class="fa fa-calendar"></i> Sab de 10hs a 18hs </li></br>
+                             	 <li><img src="assets/img/mps.png" alt="Powered By MPS"/></li>
+                            </ul>
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+                       
+                        <div class="copyright">&copy; 2015 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Rentacar.com.ar son marcas de su propiedad.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+
+
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/bootstrap-5.1.3/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" ></script>
+        <script src="./assets/include/js/web-checking.js"></script>
+
+        <script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+
+        <script src="assets/country/js/bootstrap-select-country.min.js"></script>
+    
+       
+        <!-- JS Page Level -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<script>
+    // Tooltips Initialization
+    $(function () {
+      $('.material-tooltip-main').tooltip({
+        template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
+      });
+    })
+    
+    
+    $('.menu-toggle').on('click', function () {
+            if (navigation.hasClass('opened')) {
+                navigation.removeClass('opened').addClass('closed');
+            } else {
+                navigation.removeClass('closed').addClass('opened');
+            }
+        });
+        $('.menu-toggle-close').on('click', function () {
+            if (navigation.hasClass('opened')) {
+                navigation.removeClass('opened').addClass('closed');
+            } else {
+                navigation.removeClass('closed').addClass('opened');
+            }
+        });
+    
+    
+    
+    </script>
+    
+    
+    <script>
+        var input = document.querySelector("#i_codIntTelefono2");
+        var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+        window.addEventListener("load", function() {
+    
+            errorMsg = document.querySelector("#error-msg"),
+                validMsg = document.querySelector("#valid-msg");
+    
+            var iti = window.intlTelInput(input, {
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js"
+            });
+            window.intlTelInput(input, {
+                // allowDropdown: false,
+                // autoHideDialCode: false,
+                // autoPlaceholder: "off",
+                // dropdownContainer: document.body,
+                // excludeCountries: ["us"],
+                // formatOnDisplay: false,
+                geoIpLookup: function(callback) {
+                    $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                        var countryCode = (resp && resp.country) ? resp.country : "";
+                        callback(countryCode);
+                    });
+                    },
+                    hiddenInput: "full_number",
+                    initialCountry: "auto",
+    
+                    // localizedCountries: { 'de': 'Deutschland' },
+                    // nationalMode: false,
+                    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                    placeholderNumberType: "MOBILE",
+                    // preferredCountries: ['cn', 'jp'],
+                    separateDialCode: true,
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js",
+                }
+            );
+    
+            $(validMsg).hide();
+                input.addEventListener('blur', function() {
+                    reset();
+                    if (input.value.trim()) {
+                    if (iti.isValidNumber()) {
+                        $(validMsg).show();
+                    } else {
+                        $(input).addClass('form-control-danger');
+                        var errorCode = iti.getValidationError();
+                        errorMsg.innerHTML = errorMap[errorCode];
+    
+                        $(errorMsg).show();
+                        }
+                    }
+                }
+            );
+            input.addEventListener('change', reset);
+            input.addEventListener('keyup', reset);
+        });
+    
+    
+        var reset = function() {
+        $(input).removeClass('form-control-danger');
+        errorMsg.innerHTML = "";
+        $(errorMsg).hide();
+        $(validMsg).hide();
+    
+        };
+    </script>
+    
+    <!--
+    
+    <script>
+    
+        var telInput = $("#i_codIntTelefono"),
+        errorMsg = $("#error-msg"),
+        validMsg = $("#valid-msg");
+    
+        // initialise plugin
+        telInput.intlTelInput({
+        utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+        });
+    
+        var reset = function() {
+        telInput.removeClass("error");
+        errorMsg.addClass("hide");
+        validMsg.addClass("hide");
+        };
+    
+        // on blur: validate
+        telInput.blur(function() {
+        reset();
+        if ($.trim(telInput.val())) {
+            if (telInput.intlTelInput("isValidNumber")) {
+            validMsg.removeClass("hide");
+            } else {
+            telInput.addClass("error");
+            errorMsg.removeClass("hide");
+            }
+        }
+        });
+    
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
+    
+    
+    </script>
+    -->
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/intlTelInput/css/intlTelInput.css">
+    <script type="text/javascript" src="assets/intlTelInput/js/intlTelInput.js"></script>
+    <input id="registration-phone-number" type="tel">
+    <span id="valid-msg" class="hide">✓ Valid</span>
+    <span id="error-msg" class="hide">Invalid number</span>
+
+
+    <script type="text/javascript" src="assets/credit-card/js/jquery.creditCardValidator.js"></script>
+    <script type="text/javascript" src="assets/credit-card/js/creditcard.js"></script>
+
+    </body>
+</html>
