@@ -116,7 +116,7 @@
             <div class="card card-body">
                 <div class="col-md-5">
                     <h5 class="text-color "><span class="trn"> Prepago Nacional</span></h5>
-                    <div class="row g-2">
+                   <!--  <div class="row g-2">
                       
                        
                           
@@ -187,7 +187,63 @@
                                     <label for="i_tarjetaCvc">Cod Seg</label>
                                 </div> 
                             </div>                       
-                        </div>
+                        </div> -->
+
+                        <form id="form-checkout" action="/process_payment" method="POST">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <div class="row g-2">
+                      
+                       
+                          
+                            <div class="col-md-6">
+                                <div class="form-floating">
+    <input type="text" class="form-control" id="form-checkout__cardholderName" placeholder="T" />
+    <label for="i_tarjetaNombreTitular">Titular de la tarjeta</label>
+         </div>
+        </div>
+ <div class="col-md-6">
+                                <div class="form-floating">
+    <select  class="form-select" id="form-checkout__issuer" name="issuer">
+      <option value="" disabled selected>Banco emisor</option>
+    </select>
+    </div>
+      </div>
+     <div class="col-md-6">
+                                <div class="form-floating">
+    <select  class="form-select" id="form-checkout__installments" name="installments">
+      <option value="" disabled selected>Cuotas</option>
+    </select>
+    </div>
+      </div>
+     <div class="col-md-6">
+                                <div class="form-floating">
+    <select  class="form-select" id="form-checkout__identificationType" name="identificationType">
+      <option value="" disabled selected>Tipo de documento</option>
+    </select>
+    </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating">
+    <input type="text" class="form-control" id="form-checkout__identificationNumber" name="identificationNumber" placeholder="" />
+    <label for="i_tarjetaNombreTitular">Número de documento</label>
+    </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+    <input type="email" class="form-control" id="form-checkout__email" name="email" placeholder="" />
+    <label for="i_tarjetaNombreTitular">E-mail</label>
+</div>
+</div>
+    <input id="token" name="token" type="hidden">
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+    <input id="description" name="description" type="hidden" value="Nome do Produto">
+
+    <button class="btn btn-theme btn-theme-dark mt-1" hidden type="submit" id="form-checkout__submit">Pagar</button>
+  </form>
+  </div>
        
                 </div>
                 </div>
