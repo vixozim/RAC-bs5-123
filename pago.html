@@ -194,54 +194,77 @@
     <div id="form-checkout__expirationDate" class="container"></div>
     <div id="form-checkout__securityCode" class="container"></div>
     <div class="row g-2">
-                      
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" id="i_tarjetaNumero" placeholder="Nº de tarjeta" value="AMEX-XXXX-XXXX-1024" style="color:#b9b9b9">
+               
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="password" class="form-control" id="i_tarjetacod" placeholder="MM/YY">
+              
+            </div>     
+        </div>   
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="password" class="form-control" id="i_tarjetacod" placeholder="Cod Seg">
+               
+            </div> 
+        </div> 
                        
                           
                             <div class="col-md-6">
-                                <div class="form-floating">
-    <input type="text" class="form-control" id="form-checkout__cardholderName" placeholder="T" />
-    <label for="i_tarjetaNombreTitular">Titular de la tarjeta</label>
+                                <div class="form-group">
+    <input type="text" class="form-control" id="form-checkout__cardholderName" placeholder="Titular de la tarjeta" />
+   
          </div>
         </div>
  <div class="col-md-6">
-                                <div class="form-floating">
-    <select  class="form-select" id="form-checkout__issuer" name="issuer">
+                                <div class="form-group">
+    <select  class="form-select" id="form-checkout__issuer" name="issuer" aria-placeholder="Banco emisor" style="color:#b9b9b9">
       <option value="" disabled selected>Banco emisor</option>
     </select>
     </div>
       </div>
      <div class="col-md-6">
-                                <div class="form-floating">
-    <select  class="form-select" id="form-checkout__installments" name="installments">
+                                <div class="form-group">
+    <select  class="form-select" id="form-checkout__installments" name="installments" style="color:#b9b9b9">
       <option value="" disabled selected>Cuotas</option>
     </select>
     </div>
       </div>
      <div class="col-md-6">
-                                <div class="form-floating">
-    <select  class="form-select" id="form-checkout__identificationType" name="identificationType">
+                                <div class="form-group">
+    <select  class="form-select" id="form-checkout__identificationType" name="identificationType" style="color:#b9b9b9">
       <option value="" disabled selected>Tipo de documento</option>
     </select>
     </div>
       </div>
       <div class="col-md-6">
-        <div class="form-floating">
-    <input type="text" class="form-control" id="form-checkout__identificationNumber" name="identificationNumber" placeholder="" />
-    <label for="i_tarjetaNombreTitular">Número de documento</label>
+        <div class="form-group">
+    <input type="text" class="form-control" id="form-checkout__identificationNumber" name="identificationNumber" placeholder="Número de documento" />
+   
     </div>
     </div>
     <div class="col-md-6">
-        <div class="form-floating">
-    <input type="email" class="form-control" id="form-checkout__email" name="email" placeholder="" />
-    <label for="i_tarjetaNombreTitular">E-mail</label>
+        <div class="form-group">
+    <input type="email" class="form-control" id="form-checkout__email" name="email" placeholder="Email" />
+   
 </div>
 </div>
+
+
+<div id="form-checkout__cardNumber" class="container"></div>
+<div id="form-checkout__expirationDate" class="container"></div>
+<div id="form-checkout__securityCode" class="container"></div>
     <input id="token" name="token" type="hidden">
     <input id="paymentMethodId" name="paymentMethodId" type="hidden">
     <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
     <input id="description" name="description" type="hidden" value="Nome do Produto">
 
-    <button class="btn btn-theme btn-theme-dark mt-1" hidden type="submit" id="form-checkout__submit">Pagar</button>
+    <button class="btn btn-theme btn-theme-dark mt-1"  type="submit" id="form-checkout__submit">Pagar</button>
   </form>
   </div>
        
